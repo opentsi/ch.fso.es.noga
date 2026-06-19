@@ -1,0 +1,240 @@
+{
+  "country": "ch",
+  "provider": "fso",
+  "dataset": "es_noga",
+  "title": {
+    "en": "Employment statistics by economic sector",
+    "de": "Erwerbstätigenstatistik nach Wirtschaftssektor",
+    "fr": "Statistique de la population active occupée par secteur économique",
+    "it": "Statistica delle persone occupate"
+  },
+  "source_name": {
+    "en": "Federal Statistical Office FSO",
+    "de": "Bundesamt für Statistik BFS",
+    "fr": "Office fédéral de la statistique OFS",
+    "it": "Ufficio federale di statistica UFS"
+  },
+  "source_url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/arbeit-erwerb/erhebungen/ets.html",
+  "dataset_frequency": "Q",
+  "units": {
+    "all": {
+      "en": "Employees",
+      "de": "Angestellte",
+      "fr": "Emplois",
+      "it": "Addetti"
+    }
+  },
+  "aggregate": {
+    "all": "mean"
+  },
+  "dim_order": [
+    "sector",
+    "sex"
+  ],
+  "hierarchy": {
+    "sector": {
+      "tot": {
+        "a": {},
+        "bf": {
+          "bc": {},
+          "d": {},
+          "e": {},
+          "f": {}
+        },
+        "gt": {
+          "g": {},
+          "h": {},
+          "i": {},
+          "j": {},
+          "k": {},
+          "l": {},
+          "m": {},
+          "n": {},
+          "o": {},
+          "p": {},
+          "q": {},
+          "r": {},
+          "s": {},
+          "t": {}
+        }
+      }
+    },
+    "sex": {
+      "ttl": {
+        "m": {},
+        "f": {}
+      }
+    }
+  },
+  "labels": {
+    "dimnames": {
+      "sector": {
+        "en": "Economic sector (NOGA)",
+        "de": "Wirtschaftssektor (NOGA)",
+        "fr": "Section économique (NOGA)",
+        "it": "Settore economico (NOGA)"
+      },
+      "sex": {
+        "en": "Sex",
+        "de": "Geschlecht",
+        "fr": "Sexe",
+        "it": "Sesso"
+      }
+    },
+    "sector": {
+      "tot": {
+        "en": "Total employed",
+        "de": "Erwerbstätige,Total",
+        "fr": "Personnes actives occupées, total",
+        "it": "Totale persone occupate"
+      },
+      "a": {
+        "en": "Primary sector",
+        "de": "SEKTOR I",
+        "fr": "SECTEUR PRIMAIRE",
+        "it": "SETTORE PRIMARIO"
+      },
+      "bf": {
+        "en": "Secondary sector",
+        "de": "SEKTOR II",
+        "fr": "SECTEUR SECONDAIRE",
+        "it": "SETTORE SECONDARIO"
+      },
+      "bc": {
+        "en": "Manufacturing",
+        "de": "Verarbeitendes Gewerbe/Herstellung von Waren",
+        "fr": "Industrie manufacturière, industries extractives",
+        "it": "Industria manifatturiera"
+      },
+      "d": {
+        "en": "Electricity supply",
+        "de": "Energieversorgung",
+        "fr": "Production et distribution d'électricité",
+        "it": "Approvvigionamento energetico"
+      },
+      "e": {
+        "en": "Water supply, waste management",
+        "de": "Wasserversorgung, Beseitigung von Umweltverschmutz.",
+        "fr": "Production et distribution d'eau",
+        "it": "Approvvigionamento idrico"
+      },
+      "f": {
+        "en": "Construction",
+        "de": "Baugewerbe/Bau",
+        "fr": "Construction",
+        "it": "Costruzioni"
+      },
+      "gt": {
+        "en": "Tertiary sector",
+        "de": "SEKTOR III",
+        "fr": "SECTEUR TERTIAIRE",
+        "it": "SETTORE TERZIARIO"
+      },
+      "g": {
+        "en": "Wholesale and retail trade",
+        "de": "Handel; Instandhaltung und Reparatur von Motorfahrzeugen",
+        "fr": "Commerce réparation automobiles et de motocycles",
+        "it": "Commercio e riparazione di autoveicoli"
+      },
+      "h": {
+        "en": "Transportation and storage",
+        "de": "Verkehr und Lagerei",
+        "fr": "Transports et entreposage",
+        "it": "Trasporti e magazzinaggio"
+      },
+      "i": {
+        "en": "Accommodation and food service",
+        "de": "Gastgewerbe/Beherbergung und Gastronomie",
+        "fr": "Hébergement et restauration",
+        "it": "Alloggio e ristorazione"
+      },
+      "j": {
+        "en": "Information and communication",
+        "de": "Information und Kommunikation",
+        "fr": "Information et communication",
+        "it": "Informazione e comunicazione"
+      },
+      "k": {
+        "en": "Financial and insurance activities",
+        "de": "Erbringung von Finanz- und Versicherungsdienstleistungen",
+        "fr": "Activités financières et d'assurance",
+        "it": "Attività finanziarie e assicurative"
+      },
+      "l": {
+        "en": "Real estate activities",
+        "de": "Grundstücks- und Wohnungswesen",
+        "fr": "Activités immobilières",
+        "it": "Attività immobiliari"
+      },
+      "m": {
+        "en": "Professional, scientific and technical activities",
+        "de": "Erbringung von freiberuflichen, wissenschaftlichen und technischen Dienstleistungen",
+        "fr": "Activités spécialisées, scientifiques et techniques",
+        "it": "Attività professionali, scientifiche e tecniche"
+      },
+      "n": {
+        "en": "Administrative and support service activities",
+        "de": "Erbringung von sonstigen wirtschaftlichen Dienstleistungen",
+        "fr": "Activités de services administratifs et de soutien",
+        "it": "Attività di servizi amministrativi e di supporto"
+      },
+      "o": {
+        "en": "Public administration",
+        "de": "Öffentliche Verwaltung",
+        "fr": "Administration publique",
+        "it": "Amministrazione pubblica"
+      },
+      "p": {
+        "en": "Education",
+        "de": "Erziehung und Unterricht",
+        "fr": "Enseignement",
+        "it": "Istruzione"
+      },
+      "q": {
+        "en": "Human health and social work",
+        "de": "Gesundheits- und Sozialwesen",
+        "fr": "Santé humaine et action sociale",
+        "it": "Sanità e assistenza sociale"
+      },
+      "r": {
+        "en": "Arts, entertainment and recreation",
+        "de": "Kunst, Unterhaltung und Erholung",
+        "fr": "Arts, spectacles et activités récréatives",
+        "it": "Arti, spettacolo e divertimento"
+      },
+      "s": {
+        "en": "Other service activities",
+        "de": "Erbringung von sonstigen Dienstleistungen",
+        "fr": "Autres activités de services",
+        "it": "Altre attività di servizi"
+      },
+      "t": {
+        "en": "Activities of households as employers",
+        "de": "Private Haushalte als Arbeitgeber u. Herstell. von Waren",
+        "fr": "Activité des ménages en tant que employeurs",
+        "it": "Attività di famiglie come datori di lavoro"
+      }
+    },
+    "sex": {
+      "ttl": {
+        "en": "Total",
+        "de": "Total",
+        "fr": "Total",
+        "it": "Totale"
+      },
+      "m": {
+        "en": "Men",
+        "de": "Männer",
+        "fr": "Hommes",
+        "it": "Uomini"
+      },
+      "f": {
+        "en": "Women",
+        "de": "Frauen",
+        "fr": "Femmes",
+        "it": "Donne"
+      }
+    }
+  },
+  "update_checksum": "ccfdf587926ad93e9ed46d893309888eff6612dc8bfefc163da8fb392ccb1442"
+}

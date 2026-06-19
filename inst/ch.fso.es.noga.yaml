@@ -1,0 +1,219 @@
+title:
+  en: Employment statistics by economic sector
+  de: Erwerbstätigenstatistik nach Wirtschaftssektor
+  fr: Statistique de la population active occupée par secteur économique
+  it: Statistica delle persone occupate ---
+source.name:
+  en: Federal Statistical Office FSO
+  de: Bundesamt für Statistik BFS
+  fr: Office fédéral de la statistique OFS
+  it: Ufficio federale di statistica UFS
+source.url:
+- https://www.bfs.admin.ch/bfs/de/home/statistiken/arbeit-erwerb/erhebungen/ets.html
+units:
+  all:
+    en: Employees
+    de: Angestellte
+    fr: Emplois
+    it: Addetti
+aggregate:
+  all: mean
+dim.order:
+- sector
+- sex
+hierarchy:
+  sector:
+    tot:
+      a: ~
+      bf:
+        bc: ~
+        d: ~
+        e: ~
+        f: ~
+      gt:
+        g: ~
+        h: ~
+        i: ~
+        j: ~
+        k: ~
+        l: ~
+        m: ~
+        'n': ~
+        o: ~
+        p: ~
+        q: ~
+        r: ~
+        s: ~
+        t: ~
+  sex:
+    ttl:
+      m: ~
+      f: ~
+labels:
+  dimnames:
+    sector:
+      en: ~
+      de: Wirtschaftssektor (NOGA)
+      fr: Section économique (NOGA)
+      it: ~
+    sex:
+      en: ~
+      de: Geschlecht
+      fr: Sexe
+      it: ~
+  sector:
+    a:
+      en: ~
+      de: SEKTOR I
+      fr: SECTEUR PRIMAIRE
+      it: ~
+    bc:
+      en: ~
+      de: Verarbeitendes Gewerbe/Herstellung von Waren
+      fr: Industrie manufacturière, industries extractives
+      it: ~
+    bf:
+      en: ~
+      de: SEKTOR II
+      fr: SECTEUR SECONDAIRE
+      it: ~
+    d:
+      en: ~
+      de: Energieversorgung
+      fr: Production et distribution d'électricité
+      it: ~
+    e:
+      en: ~
+      de: Wasserversorgung, Beseitigung von Umweltverschmutz.
+      fr: Production et distribution d'eau
+      it: ~
+    f:
+      en: ~
+      de: Baugewerbe/Bau
+      fr: Construction
+      it: ~
+    g:
+      en: ~
+      de: Handel; Instandhaltung und Reparatur von Motorfahrzeugen
+      fr: Commerce réparation automobiles et de motocycles
+      it: ~
+    gt:
+      en: ~
+      de: SEKTOR III
+      fr: SECTEUR TERTIAIRE
+      it: ~
+    h:
+      en: ~
+      de: Verkehr und Lagerei
+      fr: Transports et entreposage
+      it: ~
+    i:
+      en: ~
+      de: Gastgewerbe/Beherbergung und Gastronomie
+      fr: Hébergement et restauration
+      it: ~
+    j:
+      en: ~
+      de: Information und Kommunikation
+      fr: Information et communication
+      it: ~
+    k:
+      en: ~
+      de: Erbringung von Finanz- und Versicherungsdienstleistungen
+      fr: Activités financières et d'assurance
+      it: ~
+    l:
+      en: ~
+      de: Grundstücks- und Wohnungswesen
+      fr: Activités immobilières
+      it: ~
+    m:
+      en: ~
+      de: Erbringung von freiberuflichen, wissenschaftlichen und technischen Dienstleistungen
+      fr: Activités spécialisées, scientifiques et techniques
+      it: ~
+    'n':
+      en: ~
+      de: Erbringung von sonstigen wirtschaftlichen Dienstleistungen
+      fr: Activités de services administratifs et de soutien
+      it: ~
+    o:
+      en: ~
+      de: Öffentliche Verwaltung
+      fr: Administration publique
+      it: ~
+    p:
+      en: ~
+      de: Erziehung und Unterricht
+      fr: Enseignement
+      it: ~
+    q:
+      en: ~
+      de: Gesundheits- und Sozialwesen
+      fr: Santé humaine et action sociale
+      it: ~
+    r:
+      en: ~
+      de: Kunst, Unterhaltung und Erholung
+      fr: Arts, spectacles et activités récréatives
+      it: ~
+    s:
+      en: ~
+      de: Erbringung von sonstigen Dienstleistungen
+      fr: Autres activités de services
+      it: ~
+    t:
+      en: ~
+      de: Private Haushalte als Arbeitgeber u. Herstell. von Waren
+      fr: Activité des ménages en tant que employeurs
+      it: ~
+    tot:
+      en: ~
+      de: Erwerbstätige,Total
+      fr: Personnes actives occupées, total
+      it: ~
+  sex:
+    f:
+      en: ~
+      de: Frauen
+      fr: Femmes
+      it: ~
+    m:
+      en: ~
+      de: Männer
+      fr: Hommes
+      it: ~
+    ttl:
+      en: ~
+      de: Total
+      fr: Total
+      it: ~
+details:
+  en: The Employment Statistics provide important structural and economic information
+    that can be used to monitor the labour market. Everyone working in Switzerland
+    is covered by these statistics. Persons in employment are those who carry out
+    an economic activity as defined by the national accounts for at least one hour
+    per week. The ES were created in 1977. General figures go back as far as 1948.
+    Other, more detailed figures as far as 1960.
+  de: Die Erwerbstätigenstatistik (ETS) liefert wichtige strukturorientierte und konjunkturelle
+    Daten zur Arbeitsmarktbeobachtung. Erfasst werden die im schweizerischen Wirtschaftsgebiet
+    erwerbstätigen Personen. Als erwerbstätig gelten alle Personen, die im Sinne der
+    Volkswirtschaftlichen Gesamtrechnung während mindestens einer Stunde pro Woche
+    einer produktiven Arbeit nachgehen. Die ETS wurde 1977 geschaffen. Globaldaten
+    gehen bis 1948 zurück, detailliertere Daten wurden ab 1960 zur Verfügung gestellt.
+  fr: La statistique de la population active occupée (SPAO) livre des données structurelles
+    et conjoncturelles précieuses pour l'observation du marché du travail. L'ensemble
+    des personnes travaillant à l'intérieur du territoire économique suisse sont couvertes.
+    Sont considérées comme actives occupées, les personnes qui accomplissent une activité
+    productive au sens de la comptabilité nationale durant au moins une heure par
+    semaine. La SPAO a été créée en 1977. Des chiffres globaux remontent jusqu'en
+    1948 et d'autres, plus détaillés, jusqu'en 1960.
+  it: La statistica delle persone occupate (SPO) fornisce dati strutturali e congiunturali
+    preziosi per osservare il mercato del lavoro. La statistica copre tutte le persone
+    attive in Svizzera, vale a dire le persone occupate che esercitano un'attività
+    produttiva ai sensi della contabilità nazionale per almeno un'ora alla settimana.
+    La SPO è stata creata nel 1977; alcune cifre globali risalgono al 1948 e altre,
+    più dettagliate, al 1960.
+utc.updated: 2025-11-17 15:41:04
+sha1: W2ts0V08ndk2b1RnLlDyqxwGPjc=
+

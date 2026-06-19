@@ -1,6 +1,6 @@
-#' Process FSO INDPAU Data
+#' Process FSO ES NOGA Data
 #'
-#' Fetches all time series in the ch.fso.indpau collection from the KOF
+#' Fetches all time series in the ch.fso.es.noga collection from the KOF
 #' Time Series Database and writes each to its key.csv
 #'
 #' @importFrom tsdbapi read_dataset_keys set_config read_ts
@@ -10,13 +10,13 @@
 process_data <- function(key = key) {
   set_config(api_key = key)
 
-  keys <- read_dataset_keys("ch.fso.indpau")
+  keys <- read_dataset_keys("ch.fso.es.noga")
   tsl <- read_ts(keys)
 
   out_paths <- lapply(names(tsl), function(k) {
     ts_obj <- tsl[[k]]
     # remove prefix so it matches with current data
-    k <- sub("^ch\\.fso\\.indpau\\.", "", k)
+    k <- sub("^ch\\.fso\\.es\\.noga\\.", "", k)
     print(k)
 
     output_path <- file.path("data-raw", "csv", paste0(k, ".csv"))
@@ -25,7 +25,8 @@ process_data <- function(key = key) {
     freq <- frequency(ts_obj)
     values <- as.numeric(ts_obj)
 
-    if (freq == 12) {
+    # check that this is correct!!
+    if (freq == 4) {
       years <- floor(ts_time)
       months <- round((ts_time - years) * 12) + 1
       ts_dates <- as.Date(sprintf("%d-%02d-01", years, months))
