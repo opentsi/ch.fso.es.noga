@@ -1,31 +1,18 @@
----
-output: github_document
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-"
-)
-```
 
 # ch.fso.es.noga
 
-The ch.fso.es.noga package provides versioned time series data
-and their meta information for scientific research.
-In addition, the package contains the
-extract-transform-load (ETL) functionality that
-sources the data from its original provider.
+The ch.fso.es.noga package provides versioned time series data and their
+meta information for scientific research. In addition, the package
+contains the extract-transform-load (ETL) functionality that sources the
+data from its original provider.
 
 ## Browse Time Series Data
 
-You can use GitHub's ability to render to csv to explore the datasets
+You can use GitHub’s ability to render to csv to explore the datasets
 
 ## Basic Data Consumption via opentimeseries
 
-
-```r
+``` r
 remotes::install_github("opentsi/opentimeseries")
 library(opentimeseries)
 
@@ -37,33 +24,38 @@ ts <- read_open_ts(
 
 ts
 ```
+
 Given a unique time series identifier and a GitHub repo,
 *opentimeseries* will return a time series and long format `data.table`.
 
 ## Basic Usage
 
-```{r, eval=FALSE}
+``` r
 ts <- read_open_ts(
   remote_archive = "opentsi/ch.fso.es.noga"
 )
 ```
+
 By specifying a date in addition, you can able to obtain other versions
 but the most recent one. The *opentimeseries* package will simply select
 the most recent release that was available at the selected date.
 
-```{r, eval=FALSE}
+``` r
 ts202307 <- read_open_ts(
   remote_archive = "opentsi/ch.fso.es.noga",
   date = "2023-07-01"
 )
 ```
+
 Because time series data can get revised, storing vintages is important
-to monitor data revisions and benchmark forecasts. Here's a quick visual
+to monitor data revisions and benchmark forecasts. Here’s a quick visual
 comparison:
 
 # please insert your main series you want to showcase visually
-# to replace this example! 
-```{r}
+
+# to replace this example!
+
+``` r
 library(opentimeseries)
 library(tsbox)
 
@@ -77,5 +69,7 @@ ts202307 <- read_open_ts(series = "tot.f",
 ts202307$id <- "leading.202307"
 ts$id <- sprintf("leading.202606")
 ts_plot(rbind(ts202307, ts))
+#> [time]: 'date'
 ```
 
+![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
