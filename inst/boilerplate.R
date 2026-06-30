@@ -53,3 +53,5 @@ library(devtools)
 check()
 document()
 install()
+
+build_readme()

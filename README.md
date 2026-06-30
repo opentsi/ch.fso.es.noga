@@ -1,6 +1,8 @@
 
 # ch.fso.es.noga
 
+[![dataset](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/opentsi/ch.fso.es.noga/main/data-raw/shield.json)](https://github.com/opentsi/ch.fso.es.noga/actions/workflows/update_data.yaml)
+
 The ch.fso.es.noga package provides versioned time series data and their
 meta information for scientific research. In addition, the package
 contains the extract-transform-load (ETL) functionality that sources the
@@ -55,8 +57,8 @@ ts202307 <- read_open_ts(series = "tot.f",
   remote_archive = "opentsi/ch.fso.es.noga",
   date = "2023-07-01"
 )
-ts202307$id <- "leading.202307"
-ts$id <- sprintf("leading.202606")
+ts202307$id <- "tot.f.202307"
+ts$id <- sprintf("tot.f.202606")
 ts_plot(rbind(ts202307, ts))
 #> [time]: 'date'
 ```
